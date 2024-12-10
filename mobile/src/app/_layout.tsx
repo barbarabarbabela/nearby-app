@@ -9,6 +9,7 @@ Rubik_500Medium,
 Rubik_700Bold
 } from "@expo-google-fonts/rubik"
 import { Loading } from "@/components/loading"
+import { GestureHandlerRootView } from "react-native-gesture-handler"
 
 
 export default function Layout() {
@@ -25,6 +26,7 @@ export default function Layout() {
   }
 
   return (
+    <GestureHandlerRootView>
     <Stack 
       screenOptions={{ 
         headerShown: false,
@@ -32,5 +34,6 @@ export default function Layout() {
         
       }}
       />
+    </GestureHandlerRootView>
   )
 }
