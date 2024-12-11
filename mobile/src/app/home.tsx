@@ -51,7 +51,7 @@ const [markets, setMarkets] = useState<MarketsProps[]>([])
     }, [category])
 
     return (
-        <View style={{ flex: 1 }}>
+        <View style={{ flex: 1, backgroundColor: "#cecece" }}>
             <Categories data={categories} onSelect={setCategory} selected={category}/>
             <Places data={markets}/>
         </View>
